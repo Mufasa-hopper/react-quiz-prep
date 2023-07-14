@@ -1,9 +1,9 @@
 import UserItem from './UserItem'
 const Users = ({ users }) => {
 
-    return users.map((user) => {
-        return <UserItem key={user.id} user={user} />
-    })
+    return users.map((user) => (
+         <UserItem user={user} key={user.id} />
+    ))
 }
 
 export default Users
